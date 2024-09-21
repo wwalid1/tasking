@@ -1,6 +1,7 @@
 import 'package:another_flutter_splash_screen/another_flutter_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:tasking/presentation/screens/home_screen.dart';
+import 'package:tasking/presentation/screens/registerPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
               width: 300,
               child: Column(
                 children: [
-                  Image.asset("assets/ecommerse.png" , width: 200,height: 200,),
+                  Image.asset("assets/images/ecommerse.png" , width: 200,height: 200,),
                   const SizedBox(
                     height: 10,
                   ),
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           onAnimationEnd: () => debugPrint("On Fade In End"),
-          nextScreen: const HomeScreen(),
+          nextScreen: Registerpage(),
       ),
       // routes: {
       //   'register' : (context)=>
